@@ -1,0 +1,61 @@
+<html lang="de">
+
+<head>
+
+	<meta charset=utf-8 />
+	<title>Hotel Reservierung</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<img id="hotelImage" src="Hotel_Logo.PNG" alt="Image not found">
+
+<h1>Reservierung</h1>
+
+	<div id="kundenDaten">
+
+		Vorname:<input id="idVorname" type="text" placeholder="Max" value=""> 
+		Nachname:<input id="idNachname" type="text" placeholder="Mustermann" value=""> 
+		Straße:<input id="idStraße" type="text" placeholder="Musterstrasse" value=""> 
+		Hausnummer:<input id="idHausnummer" type="text" placeholder="10" value=""> 
+		PLZ:<input id="idPLZ" type="text" placeholder="12345" maxlength="5" value="">
+		Ort:<input id="idOrt" type="text" placeholder="Berlin" value=""> 
+
+	</div>
+
+	<br> <hr> <br>
+
+	<div id="hotelBuchung">
+
+		Anzahl Personen:
+		<select id="idPerson">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+				
+		Zimmer Kategorie:
+		<select id="idZimmer">
+			<option>Keine Angabe</option>
+			<option>Einzelzimmer</option>
+			<option>Doppelzimmer</option>
+		</select>
+				
+		Buchungsdatum:
+		<input id="idDatum" type="date">
+		
+		<button onClick="reservieren()">Reservieren</button>
+				
+		<div id="idAusgabe"></div>
+
+	</div>
+
+</body>
+
+</html>

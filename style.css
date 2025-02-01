@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.img-container {
+    background-color: red;
+}
+
+#carouselExampleIndicators img {
+    height: 920px;
+    object-fit: cover;
+}
+
+.profile-img {
+    box-shadow: 0 0 15px 1px black;
+}
+
+@media (min-width: 992px) {
+    .carouselExampleIndicators {
+        width: 100%;
+    }
+}

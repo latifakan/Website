@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <h1>Druckkosten-Vergleich</h1>
+
+    Anschaffungspreis Eco Plus: <input id="idEco" value="300"> in € <br>
+    Kosten pro Seite Eco Plus: <input id="idEcoKosten" value="0.06"> in € <br> <br> 
+
+    Anschaffungspreis Smart Print: <input id="idSmart" value="200"> in € <br>
+    Kosten pro Seite Smart Print: <input id="idSmartKosten" value="0.08"> in € <br> <br>
+
+    <button onclick="fRechne()">Kalkulieren</button>
+
+    <br><br>
+
+    <div id="idAusgabe"></div>
+    <br>
+    <div id="idKritischeMenge"></div>
+
+
+</body>
+
+</html>

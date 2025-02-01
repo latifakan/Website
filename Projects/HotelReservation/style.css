@@ -1,0 +1,19 @@
+body {
+    background-color: #E2F0FF;
+}
+
+#hotelImage {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#kundenDaten {
+    text-align: center;
+}
+
+#hotelBuchung {
+    text-align: center;
+}

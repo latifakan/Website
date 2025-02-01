@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    height: 30%;
+}
+
+label {
+    font-size: 26px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 0.8em 1em;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: border-radius .5s;
+    box-shadow: 0 0 15px 2px cornflowerblue;
+    margin-top: 2em;
+}
+
+button:hover {
+    border-radius: 50px;
+    transition: border-radius .5s;
+}
+
+input {
+    padding: 0.8em 1em;
+    box-shadow: 0 0 15px 1px black;
+    border: none;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+li:hover {
+    text-decoration: line-through;
+    cursor: default;
+}
+
+input:hover {
+    border-radius: 50px;
+    transition: border-radius .5s;
+}
+
+#shoppingProduct {
+    height: 100vh;
+    gap: 2em;
+}
+
+#shoppingList {
+    width: 25%;
+    height: 30%;
+    margin-left: 2em;
+}
+
+.inputField {
+    margin: 1.5em 0;
+}
+
+#product {
+    margin-bottom: 2em;
+}
+
+h2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
