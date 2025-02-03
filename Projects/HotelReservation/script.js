@@ -1,7 +1,7 @@
 "use strict";
  
     function reservieren() {
-        let vAusgabeHtml="";
+        let resultHtml="";
         let vVorname;
         let vNachname;
         let vStraße;
@@ -27,19 +27,19 @@
         vMwSt =  (Number(vNetto) * Number(0.07)).toFixed(2);
         vBrutto = Number(vNetto) + Number(vMwSt);
                         
-        vAusgabeHtml = vAusgabeHtml + "</br>" + vVorname + " " + vNachname + "</br>";
-        vAusgabeHtml = vAusgabeHtml + vStraße + "</br>";
-        vAusgabeHtml = vAusgabeHtml + vPLZ  + " " + vOrt + "</br>";
-        vAusgabeHtml = vAusgabeHtml + "</br>";
+        resultHtml = resultHtml + "</br>" + vVorname + " " + vNachname + "</br>";
+        resultHtml = resultHtml + vStraße + "</br>";
+        resultHtml = resultHtml + vPLZ  + " " + vOrt + "</br>";
+        resultHtml = resultHtml + "</br>";
         
-        vAusgabeHtml = vAusgabeHtml + "Anzahl Personen: " +vPerson+ "</br>";
-        vAusgabeHtml = vAusgabeHtml + "Zimmerkategorie: " +vZimmer + "</br>";
-        vAusgabeHtml = vAusgabeHtml + "Buchungsdatum: " + vDatum + "</br>";
-        vAusgabeHtml = vAusgabeHtml + "</br>";
+        resultHtml = resultHtml + "Anzahl Personen: " +vPerson+ "</br>";
+        resultHtml = resultHtml + "Zimmerkategorie: " +vZimmer + "</br>";
+        resultHtml = resultHtml + "Buchungsdatum: " + vDatum + "</br>";
+        resultHtml = resultHtml + "</br>";
         
-        vAusgabeHtml = vAusgabeHtml + "Netto: " + vNetto + "€</br>";
-        vAusgabeHtml = vAusgabeHtml + "enthaltene MwSt.: " + vMwSt + "€</br>";
-        vAusgabeHtml = vAusgabeHtml + "Brutto (Endbetrag): " + vBrutto + "€</br>";
+        resultHtml = resultHtml + "Netto: " + vNetto + "€</br>";
+        resultHtml = resultHtml + "enthaltene MwSt.: " + vMwSt + "€</br>";
+        resultHtml = resultHtml + "Brutto (Endbetrag): " + vBrutto + "€</br>";
         
-        document.getElementById("idAusgabe").innerHTML = vAusgabeHtml;
+        document.getElementById("idAusgabe").innerHTML = resultHtml;
     }

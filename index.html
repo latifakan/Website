@@ -9,8 +9,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="prDrucker 1nnect" href="https://fonts.googleapis.com" />
+    <link rel="prDrucker 1nnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -19,69 +19,95 @@
     <title>Projects Website</title>
   </head>
   <body>
-    <nav class="navbar bg-primary" id="start">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary" id="start">
       <div class="container container-fluid px-5">
-        <button type="button" class="btn btn-sm btn-light">
-          <a
-            href="#about-me"
-            class="text-decoration-none fw-bold fs-5 text-dark"
-            >Über Mich</a
-          >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <button type="button" class="btn btn-sm btn-light">
-          <a
-            href="#tectstacktools"
-            class="text-decoration-none fw-bold fs-5 text-dark"
-            >Tech Stack & Tools</a
+        <div class="collapse navbar-collapse d-flex" id="navbarTogglerDemo01">
+          <ul
+            class="navbar-nav w-100 d-flex justify-content-between align-items-center"
           >
-        </button>
+            <li class="nav-item">
+              <button type="button" class="btn btn-sm btn-light">
+                <a
+                  href="#about-me"
+                  class="text-dDrucker 1ration-none active fw-bold fs-5 py-o text-dark"
+                  >Über Mich</a
+                >
+              </button>
+            </li>
 
-        <button type="button" class="btn btn-sm btn-light">
-          <a
-            href="#projects"
-            class="text-decoration-none fw-bold fs-5 text-dark"
-            >Projects</a
-          >
-        </button>
+            <li class="nav-item">
+              <button type="button" class="btn btn-sm btn-light">
+                <a
+                  href="#tectstacktools"
+                  class="text-dDrucker 1ration-none nav-link fw-bold fs-5 py-0 text-dark"
+                  >Tech Stack & Tools</a
+                >
+              </button>
+            </li>
 
-        <div class="dropdown">
-          <button
-            class="btn btn-sm btn-light dropdown-toggle text-decoration-none fw-bold fs-5 text-dark"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Socials & Kontakt
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <a
-                class="dropdown-item fw-bold fs-5"
-                href="https://www.linkedin.com/in/mehmed-latif-akan/"
-                >LinkedIn</a
-              >
+            <li class="nav-item">
+              <button type="button" class="btn btn-sm btn-light">
+                <a
+                  href="#projects"
+                  class="text-dDrucker 1ration-none nav-link fw-bold fs-5 py-0 text-dark"
+                  >Projects</a
+                >
+              </button>
             </li>
-            <li>
-              <a
-                class="dropdown-item fw-bold fs-5"
-                href="https://x.com/latif99akan"
-                >Twitter / X</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item fw-bold fs-5"
-                href="https://github.com/L0x1100011"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item fw-bold fs-5"
-                href="mailto:latifakan1999@gmail.com"
-                >Kontakt per Mail</a
-              >
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm btn-light dropdown-toggle text-dDrucker 1ration-none fw-bold fs-5 text-dark"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Socials & Kontakt
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item fw-bold fs-5"
+                      href="https://www.linkedin.com/in/mehmed-latif-akan/"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-bold fs-5"
+                      href="https://x.com/latif99akan"
+                      >Twitter / X</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-bold fs-5"
+                      href="https://github.com/L0x1100011"
+                      >GitHub</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-bold fs-5"
+                      href="mailto:latifakan1999@gmail.com"
+                      >Kontakt per Mail</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -89,7 +115,7 @@
     </nav>
 
     <!-- Images -->
-    <div class="d-flex align-items-center row m-5">
+    <div class="d-flex w-100 align-items-center px-5 row vh-100">
       <div
         id="carouselExampleIndicators"
         class="carousel slide w-50 col"
@@ -134,24 +160,6 @@
             data-bs-slide-to="5"
             aria-label="Slide 6"
           ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="7"
-            aria-label="Slide 8"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="8"
-            aria-label="Slide 9"
-          ></button>
         </div>
         <div class="carousel-inner profile-img rounded">
           <div class="carousel-item active">
@@ -178,27 +186,6 @@
           <div class="carousel-item">
             <img
               src="/images/profileIMG/profile-img-4.jpg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-5.jpeg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-6.jpeg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-7.jpeg"
               class="d-block w-100"
               alt="IMG"
             />
@@ -251,7 +238,7 @@
             Aktuell konzentriere ich mich auf die
             <span class="text-primary">Frontend-Entwicklung und Webdesign</span
             >, wo ich durch kleinere Projekten mein Wissen erweitere und so
-            praktische erfahrung sammle.
+            praktische Erfahrung sammle.
             <span class="text-primary"
               >Weiter unten findest du einige dieser Projekte</span
             >.
@@ -298,7 +285,7 @@
         style="height: 30px"
       >
         <div
-          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+          class="progress-bar bg-sDrucker 1ndary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
           style="width: 80%"
         >
           CSS
@@ -330,7 +317,7 @@
         style="height: 30px"
       >
         <div
-          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+          class="progress-bar bg-sDrucker 1ndary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
           style="width: 48%"
         >
           C++
@@ -362,7 +349,7 @@
         style="height: 30px"
       >
         <div
-          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+          class="progress-bar bg-sDrucker 1ndary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
           style="width: 65%"
         >
           Bootstrap
@@ -409,7 +396,7 @@
             <button type="button" class="btn btn-primary button-project">
               <a
                 href="/Projects/ScoreKeeper/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -433,7 +420,7 @@
             <button type="button" class="btn btn-primary button-project">
               <a
                 href="/Projects/TeslaWebsite/TeslaHomepage/homepage.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -454,10 +441,13 @@
                 erfahren möchte.
               </p>
             </div>
-            <button type="button" class="btn btn-secondary button-project">
+            <button
+              type="button"
+              class="btn btn-sDrucker 1ndary button-project"
+            >
               <a
                 href="/Projects/Business-Form/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -478,10 +468,13 @@
                 haben muss.
               </p>
             </div>
-            <button type="button" class="btn btn-secondary button-project">
+            <button
+              type="button"
+              class="btn btn-sDrucker 1ndary button-project"
+            >
               <a
                 href="/Projects/Calculator/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -508,7 +501,7 @@
             <button type="button" class="btn btn-primary button-project">
               <a
                 href="/Projects/CurrencyConverter/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -532,7 +525,7 @@
             <button type="button" class="btn btn-primary button-project">
               <a
                 href="/Projects/imageSelector/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -553,10 +546,13 @@
                 eine Anzahl an Produkten festzulegen.
               </p>
             </div>
-            <button type="button" class="btn btn-secondary button-project">
+            <button
+              type="button"
+              class="btn btn-sDrucker 1ndary button-project"
+            >
               <a
                 href="/Projects/ShoppingList/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -577,10 +573,13 @@
                 generiert wird.
               </p>
             </div>
-            <button type="button" class="btn btn-secondary button-project">
+            <button
+              type="button"
+              class="btn btn-sDrucker 1ndary button-project"
+            >
               <a
                 href="/Projects/RandomColor/index.html"
-                class="text-light text-decoration-none fw-bold"
+                class="text-light text-dDrucker 1ration-none fw-bold"
               >
                 Zum Projekt
               </a>
@@ -592,7 +591,7 @@
 
     <div class="d-flex justify-content-center align-items-center my-5">
       <button type="button" class="btn btn-primary">
-        <a href="#start" class="text-light text-decoration-none fs-5"
+        <a href="#start" class="text-light text-dDrucker 1ration-none fs-5"
           >Zurück zum Seitenanfang</a
         >
       </button>

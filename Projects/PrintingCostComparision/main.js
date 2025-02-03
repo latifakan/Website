@@ -1,58 +1,58 @@
-function fRechne() {
+function RechneKosten() {
 
-    var vEco;
-    var vSmart;
-    var vEcoKosten;
-    var vSmartKosten;
+    let drucker1;
+    let drucker2;
+    let drucker1Kosten;
+    let drucker2Kosten;
 
-    var vKostenEco;
-    var vKostenSmart;
+    let kostenDrucker1;
+    let kostenDrucker2;
 
-    var vStart = 1000;
-    var vEnde = 10000;
+    let start = 1000;
+    let end = 10000;
 
-    var vAusgabe = "";
-    var vKritischeMenge = "";
+    let result = "";
+    let kritischeMenge = "";
 
-    vEco = parseFloat (document.getElementById("idEco").value);
-    vSmart = parseFloat (document.getElementById("idSmart").value);
-    vEcoKosten = parseFloat (document.getElementById("idEcoKosten").value);
-    vSmartKosten = parseFloat (document.getElementById("idSmartKosten").value);
+    drucker1 = parseFloat(document.querySelector("#drucker1").value);
+    drucker2 = parseFloat(document.querySelector("#drucker2").value);
+    drucker1Kosten = parseFloat(document.querySelector("#drucker1Kosten").value);
+    drucker2Kosten = parseFloat(document.querySelector("#drucker2Kosten").value);
 
-    vAusgabe = vAusgabe + "<table border = 1> <br>";
-    vAusgabe = vAusgabe + "<tr><th>Seitenanzahl</th><th>Kosten Eco</th><th>Kosten Smart</th><th>Besseres Angebot</th><th>Tonertausch</th></tr>";
+    result = result + "<table border = 1> <br>";
+    result = result + "<tr><th>Seitenanzahl</th><th>Drucker 1</th><th>Drucker 2</th><th>Besseres Angebot</th><th>Patrone</th></tr>";
 
-    while (vStart <= vEnde) {
+    while (start <= end) {
 
-        vKostenEco = vEco + (vStart*vEcoKosten);
-        vKostenSmart = vSmart + (vStart*vSmartKosten);
+        kostenDrucker1 = drucker1 + (start*drucker1Kosten);
+        kostenDrucker2 = drucker2 + (start*drucker2Kosten);
 
-        if (vStart % 2000 == 0) {
+        if (start % 2000 == 0) {
 
-            vAusgabe = vAusgabe + "<tr><td>" + vStart + "</td><td>" + vKostenEco.toFixed(2) +"€"+"</td><td>"+ vKostenSmart.toFixed(2) + "€" +"</td><td>Smart ist günstiger</td><td style=background-color:orange>Tonertausch</td></tr>";
+            result = result + "<tr><td>" + start + "</td><td>" + kostenDrucker1.toFixed(2) +"€"+"</td><td>"+ kostenDrucker2.toFixed(2) + "€" +"</td><td>Drucker 2 ist günstiger</td><td style=background-color:orange>Tauschen</td></tr>";
         
-        } else if (vKostenEco == vKostenSmart) {
+        } else if (kostenDrucker1 == kostenDrucker2) {
 
-            vAusgabe = vAusgabe + "<tr style=background-color:lightgreen><td>" + vStart + "</td><td>" + vKostenEco.toFixed(2) +"€"+"</td><td>"+ vKostenSmart.toFixed(2) + "€" +"</td><td>Kritische Menge erreicht!</td></tr>";
+            result = result + "<tr style=background-color:lightgreen><td>" + start + "</td><td>" + kostenDrucker1.toFixed(2) +"€"+"</td><td>"+ kostenDrucker2.toFixed(2) + "€" +"</td><td>Kritische Menge erreicht!</td></tr>";
 
-        } else if (vKostenEco < vKostenSmart) {
+        } else if (kostenDrucker1 < kostenDrucker2) {
 
-            vAusgabe = vAusgabe + "<tr><td>" + vStart + "</td><td>" + vKostenEco.toFixed(2) +"€"+"</td><td>"+ vKostenSmart.toFixed(2) + "€" +"</td><td> Eco ist günstiger!</td></tr>";
+            result = result + "<tr><td>" + start + "</td><td>" + kostenDrucker1.toFixed(2) +"€"+"</td><td>"+ kostenDrucker2.toFixed(2) + "€" +"</td><td> Drucker 1 ist günstiger!</td></tr>";
 
         } else {
             
-            vAusgabe = vAusgabe + "<tr><td>" + vStart + "</td><td>" + vKostenEco.toFixed(2) +"€"+"</td><td>"+ vKostenSmart.toFixed(2) + "€" +"</td><td> Smart ist günstiger!</td></tr>";
+            result = result + "<tr><td>" + start + "</td><td>" + kostenDrucker1.toFixed(2) +"€"+"</td><td>"+ kostenDrucker2.toFixed(2) + "€" +"</td><td> Drucker 2 ist günstiger!</td></tr>";
 
         }
 
-        vStart = vStart + 1000;
+        start = start + 1000;
 
     }
 
-    vKritischeMenge = (vEco-vSmart)/(vSmartKosten-vEcoKosten);
-    vKritischeMenge = "Die Kritische Menge liegt bei: " + vKritischeMenge + " (Gerundet: " + vKritischeMenge.toFixed(2) + ")";
-    document.getElementById("idKritischeMenge").innerHTML = vKritischeMenge;
+    kritischeMenge = (drucker1-drucker2)/(drucker2Kosten-drucker1Kosten);
+    kritischeMenge = "Die Kritische Menge liegt bei: " + kritischeMenge.toFixed(2) + " Seiten";
+    document.querySelector("#kritischeMenge").innerHTML = kritischeMenge;
     
-    vAusgabe = vAusgabe + "</table>" + "<br>";
-    document.getElementById("idAusgabe").innerHTML = vAusgabe;
+    result = result + "</table>" + "<br>";
+    document.querySelector("#outputResult").innerHTML = result;
 }

@@ -1,114 +1,154 @@
 <!DOCTYPE html>
 
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Business-Survey-Form</title>
+  </head>
 
-</head>
+  <body>
+    <h1 id="title">Business Form</h1>
 
-<body>
+    <p id="description">
+      In this form you can tell me about yourself and how you started your
+      business.
+    </p>
 
-<h1 id="title">Business Form</h1>
+    <form id="survey-form">
+      <fieldset id="user">
+        <legend>Personal information</legend>
 
-<p id="description">In this form you can tell me about yourself and how you started your business.</p>
+        <label id="name-label"
+          >Enter your name:
+          <input id="name" type="text" placeholder="Your name" required=""
+        /></label>
 
-<form id="survey-form">
+        <label id="email-label"
+          >Enter your email:
+          <input id="email" type="email" placeholder="Your email" required=""
+        /></label>
 
-    <fieldset id="user">
+        <label id="number-label"
+          >Enter your age:
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="100"
+            placeholder="Your age"
+            required=""
+          />
+        </label>
 
-    <legend>Personal information</legend>
+        <label id="bio-label"
+          >Provide a bio: <textarea id="bio" rows="5"></textarea>
+        </label>
+      </fieldset>
 
-    <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Your name" required=""></label>
+      <fieldset>
+        <legend>Which industry or Sector is your business:</legend>
 
-    <label id="email-label">Enter your email: <input id="email" type="email" placeholder="Your email" required=""></label>
+        <select id="dropdown">
+          <option>(Choose one or more)</option>
+          <option>Manufacturing</option>
+          <option>Retail and Wholesale</option>
+          <option>Service</option>
+          <option>Technology</option>
+          <option>Healthcare</option>
+          <option>Financial Services</option>
+          <option>Agriculture</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
 
-    <label id="number-label">Enter your age: <input id="number" type="number" min="13" max="100" placeholder="Your age" required=""> </label>
-    
-    <label id="bio-label">Provide a bio: <textarea id="bio" rows="5"></textarea></label>
-    
-    </fieldset>
+      <fieldset for="team-members">
+        <legend>How many team-members do you have?</legend>
 
-    <fieldset>
+        <label>
+          <input
+            type="radio"
+            class="inline"
+            value="0"
+            name="team-members"
+            id="0"
+          />
+          0
+        </label>
 
-    <legend>Which industry or Sector is your business: </legend>
-    
-    <select id="dropdown"> 
+        <label>
+          <input type="radio" class="inline" value="1" name="team-members" /> 1
+        </label>
 
-        <option>(Choose one or more) </option>  
-        <option>Manufacturing</option>
-        <option>Retail and Wholesale</option>
-        <option>Service</option>
-        <option>Technology</option>
-        <option>Healthcare</option>
-        <option>Financial Services</option>
-        <option>Agriculture</option>
-        <option>Other</option>
+        <label>
+          <input type="radio" class="inline" value="2-5" name="team-members" />
+          2 - 5
+        </label>
 
-    </select>
+        <label>
+          <input type="radio" class="inline" value="6-25" name="team-members" />
+          6 - 25
+        </label>
 
-    </fieldset>
+        <label>
+          <input
+            type="radio"
+            class="inline"
+            value="26-99"
+            name="team-members"
+          />
+          26 - 99
+        </label>
 
-    <fieldset for="team-members">
+        <label>
+          <input
+            type="radio"
+            class="inline"
+            value="over-100"
+            name="team-members"
+          />
+          More than 100
+        </label>
+      </fieldset>
 
-    <legend>How many team-members do you have?</legend>
+      <fieldset>
+        <label for="newsletter">
+          <input
+            type="checkbox"
+            class="inline"
+            value="Example"
+            name="newesletter"
+          />
+          Sign up to the newsletter
+        </label>
 
-    <label>
-        <input type="radio" class="inline" value="0" name="team-members" id="0"> 0
-    </label>
+        <label for="terms-and-service">
+          <input
+            type="checkbox"
+            class="inline"
+            value="example"
+            name="terms-and-service"
+          />I accept the
+          <a href="https://www.freDrucker 1decamp.org/news/terms-of-service/"
+            >Terms of Service</a
+          >
+        </label>
+      </fieldset>
 
-    <label>
-        <input type="radio" class="inline" value="1" name="team-members"> 1
-    </label>
-
-    <label>
-        <input type="radio" class="inline" value="2-5" name="team-members"> 2 - 5
-    </label>
-    
-    <label>
-        <input type="radio" class="inline" value="6-25" name="team-members"> 6 - 25
-    </label>
-
-    <label>
-        <input type="radio" class="inline" value="26-99" name="team-members"> 26 - 99
-    </label>
-
-    <label>
-        <input type="radio" class="inline" value="over-100" name="team-members"> More than 100
-    </label>
-
-    </fieldset>
-
-    <fieldset>
-
-    <label for="newsletter">
-        <input type="checkbox" class="inline" value="Example" name="newesletter"> Sign up to the newsletter
-    </label>
-
-    <label for="terms-and-service">
-        <input type="checkbox" class="inline" value="example" name="terms-and-service">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms of Service</a>
-    </label>
-        
-    </fieldset>
-
-    <fieldset>
-    
+      <fieldset>
         <legend>Tell me more about your business</legend>
-    
-        <textarea rows="5" placeholder="When did you start, how old where you, how much capital do you start with..."></textarea>
 
-        <input id="submit" type="submit" value="Submit">
-        
-    </fieldset>
-    
-</form>
+        <textarea
+          rows="5"
+          placeholder="When did you start, how old where you, how much capital do you start with..."
+        ></textarea>
+
+        <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
 
     <a href="/index.html"><button id="website">Website</button></a>
-
-</body>
-
+  </body>
 </html>

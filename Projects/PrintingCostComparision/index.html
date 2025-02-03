@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Druckkosten Vergleich</title>
 
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Druckkosten-Vergleich</h1>
+      <div id="input">
+        <h2>Drucker 1</h2>
+        <label for="drucker1" class="text">
+          Anschaffungspreis:
+          <input id="drucker1" placeholder="Beispiel: 300" />
+        </label>
+        <label for="drucker1Kosten" class="text"
+          >Kosten pro Seite:
+          <input id="drucker1Kosten" placeholder="Beispiel: 0.06" />
+        </label>
+
+        <h2>Drucker 2</h2>
+
+        <label for="drucker2">
+          Anschaffungspreis:
+          <input id="drucker2" placeholder="Beispiel: 200" />
+        </label>
+
+        <label for="drucker2Kosten">
+          Kosten pro Seite:
+          <input id="drucker2Kosten" placeholder="Beispiel: 0.08" />
+        </label>
+
+        <button onclick="RechneKosten()">Berechnen</button>
+      </div>
+
+      <div id="output">
+        <h2>Vergleich Drucker 1 und Drucker 2</h2>
+        <div id="outputResult"></div>
+        <div id="kritischeMenge"></div>
+      </div>
+    </main>
     <script src="main.js"></script>
-    <link rel="stylesheet" href="./style.css">
-
-</head>
-
-<body>
-
-    <h1>Druckkosten-Vergleich</h1>
-
-    Anschaffungspreis Eco Plus: <input id="idEco" value="300"> in € <br>
-    Kosten pro Seite Eco Plus: <input id="idEcoKosten" value="0.06"> in € <br> <br> 
-
-    Anschaffungspreis Smart Print: <input id="idSmart" value="200"> in € <br>
-    Kosten pro Seite Smart Print: <input id="idSmartKosten" value="0.08"> in € <br> <br>
-
-    <button onclick="fRechne()">Kalkulieren</button>
-
-    <br><br>
-
-    <div id="idAusgabe"></div>
-    <br>
-    <div id="idKritischeMenge"></div>
-
-
-</body>
-
+  </body>
 </html>

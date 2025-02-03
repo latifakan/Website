@@ -1,26 +1,26 @@
 function fRechne() {
 
-    var vGrundgebührA;
-    var vGrundgebührB;
+    let vGrundgebührA;
+    let vGrundgebührB;
 
-    var vKostenProMinuteA;
-    var vKostenProMinuteB;
+    let vKostenProMinuteA;
+    let vKostenProMinuteB;
 
-    var vMinutenzahl = 0;
+    let vMinutenzahl = 0;
 
-    var vKostenA;
-    var vKostenB;
+    let vKostenA;
+    let vKostenB;
 
-    var vAusgabe = "";
-    var vAusgabe2 = "";
+    let result = "";
+    let result2 = "";
 
     vGrundgebührA = parseFloat(document.getElementById("idGrundgebührA").value);
     vGrundgebührB = parseFloat(document.getElementById("idGrundgebührB").value);
     vKostenProMinuteA = parseFloat(document.getElementById("idKostenProMinuteA").value);
     vKostenProMinuteB = parseFloat(document.getElementById("idKostenProMinuteB").value);
 
-    vAusgabe = vAusgabe + "<table border = 1>";
-    vAusgabe = vAusgabe + "<tr><th>Telefoneinheiten</th><th>Gesamtkosten A</th><th>Gesamtkosten B</th><th>Besserse Angebot ?</th></tr>" + "<br>";
+    result = result + "<table border = 1>";
+    result = result + "<tr><th>Telefoneinheiten</th><th>Gesamtkosten A</th><th>Gesamtkosten B</th><th>Besserse Angebot ?</th></tr>" + "<br>";
 
     while (vMinutenzahl <= 200) {
 
@@ -29,15 +29,15 @@ function fRechne() {
 
         if (vKostenA < vKostenB) {
             
-            vAusgabe = vAusgabe + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Anbieter A ist günstiger</td></tr>";
+            result = result + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Anbieter A ist günstiger</td></tr>";
 
         } else if (vKostenA == vKostenB) {
 
-            vAusgabe = vAusgabe + "<tr style=background-color:lightgreen><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Kritische Menge erreicht!</td></tr>";
+            result = result + "<tr style=background-color:lightgreen><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Kritische Menge erreicht!</td></tr>";
 
         } else {
 
-            vAusgabe = vAusgabe + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Anbieter B ist günstiger</td></tr>";
+            result = result + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Anbieter B ist günstiger</td></tr>";
 
         }
 
@@ -45,11 +45,11 @@ function fRechne() {
 
     }
 
-    vAusgabe2 = (vGrundgebührA-vGrundgebührB)/(vKostenProMinuteB-vKostenProMinuteA);
-    vAusgabe2 = "<br>" + "Die Kritische Menge liegt bei " + vAusgabe2 + ".";
+    result2 = (vGrundgebührA-vGrundgebührB)/(vKostenProMinuteB-vKostenProMinuteA);
+    result2 = "<br>" + "Die Kritische Menge liegt bei " + result2 + ".";
     
-    vAusgabe = vAusgabe + "</table>";
+    result = result + "</table>";
 
-    document.getElementById("idAusgabe").innerHTML = vAusgabe;
-    document.getElementById("idAusgabe2").innerHTML = vAusgabe2;
+    document.getElementById("idAusgabe").innerHTML = result;
+    document.getElementById("idAusgabe2").innerHTML = result2;
 }
