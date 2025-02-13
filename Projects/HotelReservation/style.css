@@ -1,5 +1,11 @@
 body {
     background-color: #E2F0FF;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1.6;
 }
 
 #hotelImage {
@@ -10,10 +16,63 @@ h1 {
     text-align: center;
 }
 
-#kundenDaten {
+.kundenDaten {
     text-align: center;
 }
 
-#hotelBuchung {
+.hotelBuchung {
     text-align: center;
+}
+
+.container {
+    padding: 2em;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+input, button, select {
+    border: none;
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px black;
+    text-align: center;
+}
+
+button, select, #idDatum:hover {
+    cursor: pointer;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    letter-spacing: 1.6;
+    width: 8em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+select {
+    padding: 0.5em 2em;
+}
+
+.ausgabe {
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    flex-direction: column;
+}
+
+#idAusgabe {
+    text-align: center;
+    margin-top: 1em;
 }

@@ -5,6 +5,7 @@
         let vVorname;
         let vNachname;
         let vStraße;
+        let vHausnummer;
         let vPLZ;
         let vOrt;
         let vPerson;
@@ -17,6 +18,7 @@
         vVorname = document.getElementById("idVorname").value;
         vNachname = document.getElementById("idNachname").value;
         vStraße = document.getElementById("idStraße").value;
+        vHausnummer = document.getElementById("idHausnummer").value;
         vPLZ = document.getElementById("idPLZ").value;
         vOrt = document.getElementById("idOrt").value;
         vPerson = document.getElementById("idPerson").value;
@@ -28,7 +30,7 @@
         vBrutto = Number(vNetto) + Number(vMwSt);
                         
         resultHtml = resultHtml + "</br>" + vVorname + " " + vNachname + "</br>";
-        resultHtml = resultHtml + vStraße + "</br>";
+        resultHtml = resultHtml + vStraße + " " + vHausnummer + "</br>";
         resultHtml = resultHtml + vPLZ  + " " + vOrt + "</br>";
         resultHtml = resultHtml + "</br>";
         
