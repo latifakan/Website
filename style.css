@@ -14,6 +14,12 @@ body {
     box-shadow: 0 0 15px 1px black;
 }
 
+/* .projects img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+} */
+
 @media (max-width: 992px) {
     .carouselExampleIndicators {
         width: 100%;
