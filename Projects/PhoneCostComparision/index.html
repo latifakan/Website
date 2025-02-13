@@ -10,34 +10,37 @@
   </head>
 
   <body>
-    <h1>Telefonanbietervergleich</h1>
     <main>
+      <h1>Telefonanbietervergleich</h1>
       <div id="input">
         <h2>Anbieter A</h2>
+
         <label for="drucker1" class="text">
           Grundgebühr:
-          <input id="idGrundgebührA" value="10.00" />
+          <input id="idGrundgebührA" placeholder="10" /> €
         </label>
+
         <label for="drucker1Kosten" class="text"
-          >Kosten pro Minute: <input id="idKostenProMinuteA" value="0.05" />€
+          >Kosten pro Minute:
+          <input id="idKostenProMinuteA" placeholder="0,05" /> €
         </label>
 
         <h2>Anbieter B</h2>
 
         <label for="drucker2">
           Grundgebühr:
-          <input id="idGrundgebührB" value="5.00" />€
+          <input id="idGrundgebührB" placeholder="5" /> €
         </label>
 
         <label for="drucker2Kosten">
           Kosten pro Minute:
-          <input id="idKostenProMinuteB" value="0.10" />€
+          <input id="idKostenProMinuteB" placeholder="0,10" /> €
         </label>
 
         <button onclick="fRechne()">Kalkulieren!</button>
       </div>
       <div id="output">
-        <h2>Berechnung der beiden Anbieter</h2>
+        <h2 id="outputHeader">Berechnung der beiden Anbieter</h2>
         <div id="idAusgabe"></div>
         <div id="idAusgabe2"></div>
       </div>

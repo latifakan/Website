@@ -14,10 +14,10 @@ function fRechne() {
     let result = "";
     let result2 = "";
 
-    vGrundgebührA = parseFloat(document.getElementById("idGrundgebührA").value);
-    vGrundgebührB = parseFloat(document.getElementById("idGrundgebührB").value);
-    vKostenProMinuteA = parseFloat(document.getElementById("idKostenProMinuteA").value);
-    vKostenProMinuteB = parseFloat(document.getElementById("idKostenProMinuteB").value);
+    vGrundgebührA = parseFloat(document.getElementById("idGrundgebührA").value.replace(",", "."));
+    vGrundgebührB = parseFloat(document.getElementById("idGrundgebührB").value.replace(",", "."));
+    vKostenProMinuteA = parseFloat(document.getElementById("idKostenProMinuteA").value.replace(",", "."));
+    vKostenProMinuteB = parseFloat(document.getElementById("idKostenProMinuteB").value.replace(",", "."));
 
     result = result + "<table border = 1>";
     result = result + "<tr><th>Telefoneinheiten</th><th>Gesamtkosten A</th><th>Gesamtkosten B</th><th>Besserse Angebot ?</th></tr>" + "<br>";
@@ -29,15 +29,15 @@ function fRechne() {
 
         if (vKostenA < vKostenB) {
             
-            result = result + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Anbieter A ist günstiger</td></tr>";
+            result = result + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2).replace(".", ",") +"€"+"</td><td>"+ vKostenB.toFixed(2).replace(".", ",") + "€" +"</td><td>Anbieter A ist günstiger</td></tr>";
 
         } else if (vKostenA == vKostenB) {
 
-            result = result + "<tr style=background-color:lightgreen><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Kritische Menge erreicht!</td></tr>";
+            result = result + "<tr style=background-color:lightgreen><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2).replace(".", ",") +"€"+"</td><td>"+ vKostenB.toFixed(2).replace(".", ",") + "€" +"</td><td>Kritische Menge erreicht!</td></tr>";
 
         } else {
 
-            result = result + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2) +"€"+"</td><td>"+ vKostenB.toFixed(2) + "€" +"</td><td>Anbieter B ist günstiger</td></tr>";
+            result = result + "<tr><td>" + vMinutenzahl + "</td><td>" + vKostenA.toFixed(2).replace(".", ",") +"€"+"</td><td>"+ vKostenB.toFixed(2).replace(".", ",") + "€" +"</td><td>Anbieter B ist günstiger</td></tr>";
 
         }
 
