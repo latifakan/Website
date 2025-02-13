@@ -14,14 +14,19 @@ function fRechne() {
 
 
 	result = result + "<table border = 1>";
-	result = result + "<tr><th>Jahr</th><th>Jahresstartkapital (01.01)</th><th>Zinsen(31.12)</th><th>Jahresendkapital (31.12)</th></tr>" + "<br>";
+	result = result + "<tr><th>Jahr</th><th>Jahresstartkapital</th><th>Zinsen</th><th>Jahresendkapital</th></tr>" + "<br>";
 	
 	
 	while (vJahr <= vLaufzeit) {
 		
 		vZinsen = startkapital * vZinssatz / 100;
 		vEndkapital = startkapital + vZinsen;
-		result = result + "<tr><td>"+ vJahr +"</td><td>"+ startkapital.toFixed(2) +"</td><td>"+ vZinsen.toFixed(2) +"</td><td>"+ vEndkapital.toFixed(2) +"</td></tr>";
+		result = 	
+					result + "<tr><td>"+ vJahr +"</td><td>" + 
+					startkapital.toFixed(2).replace(".", ",") +" €</td><td>" + 
+					vZinsen.toFixed(2).replace(".", ",") +" €</td><td>" + 
+					vEndkapital.toFixed(2) +" €</td></tr>";
+
 		startkapital = vEndkapital;
 		
 		vJahr++;

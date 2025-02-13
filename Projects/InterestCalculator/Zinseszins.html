@@ -1,34 +1,47 @@
-<!doctype html>
-<html>
-	
-<head>
-<meta charset="utf-8">
-<title>Interest Calculator</title>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zinseszins-Rechner</title>
 
-<script src="./main.js"></script>
-<link rel="stylesheet" href="./style.css">
-	
-</head>
-	
-<body>
-	
-	<h1>Zinseszins-Rechner - Design Coming Soon :)</h1>
-	
-	Startkapital: <input id="idStartkapital" value="1000" size="6"> € <hr>
-	
-	Zinssatz: <input id="idZinssatz" value="2" size="6"> %	<br>
-	
-	Laufzeit: <input id="idLaufzeit" value="5" size="6"> Jahre <br><br>
-	
-	<button onclick="fRechne()">Zinsen berechnen</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-	<br><br>
-	
-	<div id="idAusgabe"></div>
-	
-</body>
-	
-	
-	
-	
+  <body>
+    <main>
+      <h1>Zinseszins Rechner</h1>
+
+      <div class="input">
+        <label for="idStartkapital">
+          Startkapital:
+          <input id="idStartkapital" placeholder="1000" size="6" /> €
+        </label>
+
+        <label for="idZinssatz">
+          Zinssatz:
+          <input id="idZinssatz" placeholder="2" size="6" /> %
+        </label>
+
+        <label for="idLaufzeit">
+          Laufzeit:
+          <input id="idLaufzeit" placeholder="5" size="6" /> Jahre
+        </label>
+      </div>
+
+      <div class="output">
+        <div>
+          <button onclick="fRechne()">Zinsen berechnen</button>
+        </div>
+        <div id="idAusgabe"></div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
