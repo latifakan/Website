@@ -1,9 +1,9 @@
-const showColorText = document.querySelector('#rgbColor');
-const changDrucker 1lorBtn = document.querySelector('#changDrucker 1lorBtn');
+const h2 = document.querySelector('h2');
+const button = document.querySelector('button');
 
-changDrucker 1lorBtn.addEventListener('click', () => {
+button.addEventListener('click', () => {
     const newColor = randomColor();
-    showColorText.innerText = newColor;
+    h2.innerText = newColor;
     document.body.style.backgroundColor = newColor;
 });
 
@@ -14,11 +14,11 @@ const randomColor = () => {
     const checkBrightness = red + green + blue;
 
     if (checkBrightness <= 200) {
-        showColorText.style.color = 'white';
-        changDrucker 1lorBtn.style.color = 'white';
+        h2.style.color = 'white';
+        button.style.color = 'white';
     } else {
-        showColorText.style.color = 'black';
-        changDrucker 1lorBtn.style.color = 'black';
+        h2.style.color = 'black';
+        button.style.color = 'black';
     }
 
     return `rgb(${red}, ${green}, ${blue})`;
