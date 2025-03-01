@@ -1,27 +1,104 @@
+:root {
+    --primary-color: #1f242d;
+    --second-bg-color: #323946;
+    --accent-color: #0d6efd;
+    --text-color: #fff;
+}
+
+.header-button {
+    background-color: var(--primary-color);
+    border: 2px solid var(--second-bg-color);
+    box-shadow: 0 0 25px 1px var(--second-bg-color);
+}
+
+.card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+#card-color {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 0 15px 3px var(--primary-color);
+}
+
+#footer-button {
+    color: var(--text-color);
+}
+
+#about-me {
+    background-color: var(--second-bg-color);
+}
+
+#tech-stack {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
 body {
-    width: 100%;
-    font-family: "Raleway", serif;
+    font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
+    color: var(--text-color);
+    background-color: var(--primary-color);
 }
 
 #carouselExampleIndicators img {
-    height: 920px;
     object-fit: cover;
 }
 
-.profile-img {
-    box-shadow: 0 0 15px 1px black;
+#projects {
+    background-color: var(--second-bg-color);
 }
 
-/* .projects img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-} */
+h5 {
+    font-size: 28px;
+}
 
+h3 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 65px;
+}
+
+p {
+    font-size: 21px;
+}
+
+@media (max-width: 576px) {
+    #startseite-text {
+        text-align: center;
+    }
+    #startseite-text h3 {
+        font-size: 30px;
+    }
+
+    #about-me-text p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) { /* Small (SM) */ }
 @media (max-width: 992px) {
-    .carouselExampleIndicators {
-        width: 100%;
+    #startseite-text {
+        text-align: center;
+    }
+    #startseite-text h3 {
+        font-size: 30px;
+    }
+    #about-me-text p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media (min-width: 1200px) { /* Large (LG) */ }
+@media (min-width: 1400px) { 
+    p {
+        font-size: 32px;
     }
 }

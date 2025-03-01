@@ -9,8 +9,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="prDrucker 1nnect" href="https://fonts.googleapis.com" />
-    <link rel="prDrucker 1nnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -19,15 +19,15 @@
     <title>Projects Website</title>
   </head>
   <body>
-    <!-- Navbar -->
 
+    <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-primary py-3"
+      class="navbar navbar-expand-lg navbar-light py-3 position-absolute w-100"
       id="start"
     >
-      <div class="container container-fluid px-5">
+      <div class="container container-lg px-5">
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -39,28 +39,28 @@
             class="navbar-nav w-100 d-flex justify-content-between align-items-center gap-2"
           >
             <li class="nav-item">
-              <button type="button" class="btn btn-sm btn-light">
+              <button type="button" class="btn btn-sm header-button">
                 <a
                   href="#about-me"
-                  class="nav-link active fw-bold fs-5 py-0 text-dark"
+                  class="nav-link active fw-bold fs-5 py-0 text-light"
                   >Über Mich</a
                 >
               </button>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-sm btn-light">
+              <button type="button" class="btn btn-sm header-button">
                 <a
-                  href="#tectstacktools"
-                  class="nav-link nav-link fw-bold fs-5 py-0 text-dark"
+                  href="#tech-stack"
+                  class="nav-link nav-link fw-bold fs-5 py-0 text-light"
                   >Tech Stack & Tools</a
                 >
               </button>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-sm btn-light">
+              <button type="button" class="btn btn-sm header-button">
                 <a
                   href="#projects"
-                  class="nav-link nav-link fw-bold fs-5 py-0 text-dark"
+                  class="nav-link nav-link fw-bold fs-5 py-0 text-light"
                   >Projects</a
                 >
               </button>
@@ -68,38 +68,38 @@
             <li class="nav-item">
               <div class="dropdown">
                 <button
-                  class="btn btn-sm btn-light dropdown-toggle fw-bold fs-5 text-dark"
+                  class="btn btn-sm header-button dropdown-toggle fw-bold fs-5 text-light"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Socials & Kontakt
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu header-button">
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
                       href="https://www.linkedin.com/in/mehmed-latif-akan/"
                       >LinkedIn</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
                       href="https://x.com/latif99akan"
                       >Twitter / X</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
                       href="https://github.com/L0x1100011"
                       >GitHub</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
                       href="mailto:latifakan1999@gmail.com"
                       >Kontakt per Mail</a
                     >
@@ -112,153 +112,275 @@
       </div>
     </nav>
 
-    <!-- Images -->
-    <div
-      class="d-flex w-100 align-items-center px-5 row min-vh-100 gap-lg-5 gap-5 py-5"
-    >
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide col-lg"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-        </div>
-        <div class="carousel-inner profile-img rounded">
-          <div class="carousel-item active">
-            <img
-              src="/images/profileIMG/profile-img-1.jpg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-2.jpg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-3.jpg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-4.jpg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-8.jpeg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/profileIMG/profile-img-9.jpeg"
-              class="d-block w-100"
-              alt="IMG"
-            />
-          </div>
+    <!-- Startseite -->
 
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
+    <div class="vh-100 d-flex align-items-center justify-content-center pt-5 w-100">
+      <div class="background-wave" style="z-index: -1">
+        <img
+          class="w-100 position-absolute"
+          style="left: 0; bottom: 0"
+          src="/images/wave.svg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="container-lg row d-flex align-items-center justify-content-center px-5"
+        id="startseite-content"
+      >
+        <div class="col-lg-6 d-flex justify-content-center flex-column lh-lg">
+          <div id="startseite-text">
+            <h3>Hallo, ich bin</h3>
+            <h2>Mehmed Latif Akan</h2>
+
+            <h3>
+              und interessiere mich für die
+              <span class="text-primary">Frontend-Entwickler</span>.
+            </h3>
+
+            <p class="lh-sm">
+              Meine Leidenschaft für die Softwareentwicklung hat mich dazu
+              gebracht, eigenständig die Frontend Entwicklung zu lernen und mich
+              in die Backend-Entwicklung einzuarbeiten.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary mt-2 text-light fw-bold"
+              style="width: 40%"
+              data-bs-toggle="modal"
+              data-bs-target="#messageModal"
+            >
+              Kontakt
+            </button>
+          </div>
+          <div
+            class="modal fade"
+            id="messageModal"
+            tabindex="-1"
+            aria-labelledby="messageModalLabel"
+            aria-hidden="true"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="messageModalLabel">
+                    Nachricht schreiben
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Schreibe deine Nachricht..."
+                  ></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Schließen
+                  </button>
+                  <button type="button" class="btn btn-primary">Senden</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" id="startseite-img">
+          <div class="d-flex align-items-center justify-content-center">
+            <svg viewBox="0 0 200 200" width="800" class="profile-img">
+              <defs>
+                <filter id="round">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="5"
+                    result="blur"
+                  />
+                  <feComposite in="SourceGraphic" in2="blur" operator="atop" />
+                </filter>
+              </defs>
+              <polygon
+                points="55,20 145,20 185,100 145,180 55,180 15,100"
+                fill="#2d61f4"
+                filter="url(#round)"
+              />
+              <clipPath id="hexagon-clip">
+                <polygon points="55,20 145,20 180,100 145,180 55,180 20,100" />
+              </clipPath>
+              <image
+                href="/images/profileIMG/profile-img-2.jpg"
+                width="200"
+                height="200"
+                clip-path="url(#hexagon-clip)"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="col-lg">
-        <blockquote class="container blockquote text-center fs-2">
-          <p>Hallo, ich bin <span class="text-primary">Latif</span>.</p>
+    </div>
 
-          <p>
-            Ich bin <span class="text-primary">25 Jahre alt</span> und
-            interessiere mich für die Softwareentwicklung.
-          </p>
+    <!-- About Me -->
+    <div
+      class="row d-flex gx-0 justify-content-center vh-100"
+      id="about-me"
+    >
+      <h2 class="text-center fw-bold text-light">
+        ABOUT<span class="text-primary"> ME</span>
+      </h2>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide col-lg-6 col-12"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
 
-          <p>
-            Aktuell konzentriere ich mich auf die
-            <span class="text-primary">Frontend-Entwicklung und Webdesign</span
-            >, wo ich durch kleinere Projekten mein Wissen erweitere und so
-            praktische Erfahrung sammle.
-            <span class="text-primary"
-              >Weiter unten findest du einige dieser
-              <span><a href="#projects">Projekte</a></span></span
-            >.
-          </p>
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img
+                src="/images/profileIMG/profile-img-1.jpg"
+                class="d-block w-100"
+                alt="IMG"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/profileIMG/profile-img-2.jpg"
+                class="d-block w-100"
+                alt="IMG"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/profileIMG/profile-img-4.jpg"
+                class="d-block w-100"
+                alt="IMG"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/profileIMG/profile-img-8.jpeg"
+                class="d-block w-100"
+                alt="IMG"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/profileIMG/profile-img-9.jpeg"
+                class="d-block w-100"
+                alt="IMG"
+              />
+            </div>
 
-          <p>
-            Ich möchte mich in Zukunft auch in die Backend-Entwicklung
-            einarbeiten.
-          </p>
-        </blockquote>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <blockquote class="blockquote fs-2 px-3 p-3" id="about-me-text">
+            <p>
+              Hallo zusammen. Ich bin der Mehmed Latif Akan, wobei man mich auch
+              nur Latif nennt.
+            </p>
+            <p>
+              Schon seit jungen Jahren interessiere ich mich für die Technik. So
+              habe ich schon mit 17 meinen eigenen Computer zusammengebaut und
+              die Komponenten selbst konfiguriert.
+            </p>
+            <p>
+              Mit der Softwareentwicklung hatte ich schon während meiner
+              Fachhochschulreife, wo ich auch parallel eine Berufsausbildung zum
+              Kaufmännischen Ass. für Informationsverarbeitung absolviert
+              habe.Dort haben ich mit HTML, CSS und JS gearbeitet und konnte so
+              schon meine ersten Erfahurngen sammeln.
+            </p>
+            <p>
+              Während meines Studiums an der FH Aachen, habe ich mit C++
+              gearbeitet und habe während dieser Zeit erste Behrührungspunkte
+              mit der Objektorierntierung.
+            </p>
+            <p>
+              Derzeit bringe ich mir die Frontend-Entwicklung bei und möchte
+              danach auch in die Backend-Entwicklung gehen.
+            </p>
+          </blockquote>
+        </div>
       </div>
     </div>
 
     <!-- Tech Stack -->
 
-    <div class="container">
-      <h2 id="tectstacktools" class="text-center my-5 fw-bold">
-        TECH STACK / TOOLS
-      </h2>
+    <div
+      class="container-lg vh-100 d-flex flex-column justify-content-center position-relative"
+      id="tech-stack"
+    >
+      <div class="position-absolute top-0 pt-5 w-100">
+        <h2 class="text-center fw-bold text-light">TECH STACK / TOOLS</h2>
+      </div>
       <div
         class="progress mb-3"
         role="progressbar"
@@ -285,7 +407,7 @@
         style="height: 30px"
       >
         <div
-          class="progress-bar bg-sDrucker 1ndary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
           style="width: 80%"
         >
           CSS
@@ -317,7 +439,7 @@
         style="height: 30px"
       >
         <div
-          class="progress-bar bg-sDrucker 1ndary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
           style="width: 48%"
         >
           C++
@@ -349,7 +471,7 @@
         style="height: 30px"
       >
         <div
-          class="progress-bar bg-sDrucker 1ndary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
           style="width: 65%"
         >
           Bootstrap
@@ -375,343 +497,352 @@
 
     <!-- My projects -->
 
-    <h2 id="projects" class="container text-center my-5 fw-bold">PROJEKTE</h2>
+    <div id="projects" class="py-5">
+      <h2 class="text-center fw-bold text-light">PROJEKTE</h2>
 
-    <main class="container mt-5 projects">
-      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/ScoreKeeper/index.html">
-              <img
-                src="/images/projectIMG/score-keeper.png"
-                class="card-img-top h-100"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Punktezähler</h5>
-              <p class="card-text">
-                Hiermit kannst du den Punktestand bei dem Spiel: Schere, Stein,
-                Papier festhalten.
-              </p>
-            </div>
-            <button type="button" class="btn btn-primary button-project">
-              <a
-                href="/Projects/ScoreKeeper/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
+      <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/ScoreKeeper/index.html">
+                <img
+                  src="/images/projectIMG/score-keeper.png"
+                  class="card-img-top"
+                  alt="..."
+                />
               </a>
-            </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Punktezähler</h5>
+                <p class="card-text">
+                  Hiermit kannst du den Punktestand bei dem Spiel: Schere,
+                  Stein, Papier festhalten.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary button-project">
+                <a
+                  href="/Projects/ScoreKeeper/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/TeslaWebsite/TeslaHomepage/homepage.html">
+                <img
+                  src="/images/projectIMG/tesla-website.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Tesla Website</h5>
+                <p class="card-text">
+                  Eine Website zu den Fahrzeugen von Tesla, wo ich die
+                  technische Daten zu den einzelnen Fahrzeugen aufliste.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary button-project">
+                <a
+                  href="/Projects/TeslaWebsite/TeslaHomepage/homepage.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/Business-Form/index.html">
+                <img
+                  src="/images/projectIMG/business-form.png"
+                  class="card-img-top h-100"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Business Form</h5>
+                <p class="card-text">
+                  Ein kleines Formular, wo ich zu einem Unternehmen die Fakten
+                  erfahren möchte.
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary button-project">
+                <a
+                  href="/Projects/Business-Form/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/Calculator/index.html">
+                <img
+                  src="/images/projectIMG/calculator.png"
+                  class="card-img-top h-100"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Taschenrechner</h5>
+                <p class="card-text">
+                  Ein Projekt was so gut wie jeder Softwareentwickler mal
+                  gemacht haben muss.
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary button-project">
+                <a
+                  href="/Projects/Calculator/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/TeslaWebsite/TeslaHomepage/homepage.html">
-              <img
-                src="/images/projectIMG/tesla-website.png"
-                class="card-img-top h-100"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Tesla Website</h5>
-              <p class="card-text">
-                Eine Website zu den Fahrzeugen von Tesla, wo ich die technische
-                Daten zu den einzelnen Fahrzeugen aufliste.
-              </p>
-            </div>
-            <button type="button" class="btn btn-primary button-project">
-              <a
-                href="/Projects/TeslaWebsite/TeslaHomepage/homepage.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="">
+                <img
+                  src="/images/projectIMG/currency-converter.png"
+                  class="card-img-top h-100"
+                  alt="..."
+                />
               </a>
-            </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Währungsrechner</h5>
+                <p class="card-text">
+                  Wie der Name schon sagt, ermöglicht dieses Projekt, von EURO
+                  zu USD und andersrum umzuwandeln.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary button-project">
+                <a
+                  href="/Projects/CurrencyConverter/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/imageSelector/index.html">
+                <img
+                  src="/images/projectIMG/image-selector.png"
+                  class="card-img-top h-100"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Image Selector</h5>
+                <p class="card-text">
+                  Ein kleines JavaScript Projekt um Bilder durchzugehen. Vor,
+                  zurück und zurücksetzen.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary button-project">
+                <a
+                  href="/Projects/imageSelector/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/ShoppingList/index.html">
+                <img
+                  src="/images/projectIMG/shopping-list.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Einkaufsliste</h5>
+                <p class="card-text">
+                  Ermöglicht Produkte zu der Einkaufsliste hinzuzufügen und dazu
+                  eine Anzahl an Produkten festzulegen.
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary button-project">
+                <a
+                  href="/Projects/ShoppingList/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="card-color">
+              <a href="/Projects/RandomColor/index.html">
+                <img
+                  src="/images/projectIMG/color-picker.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Farbwähler</h5>
+                <p class="card-text">
+                  Verändert den Hintergrund mit einer Farbe, welches zufällig
+                  generiert wird.
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary button-project">
+                <a
+                  href="/Projects/RandomColor/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/Business-Form/index.html">
-              <img
-                src="/images/projectIMG/business-form.png"
-                class="card-img-top h-100"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Business Form</h5>
-              <p class="card-text">
-                Ein kleines Formular, wo ich zu einem Unternehmen die Fakten
-                erfahren möchte.
-              </p>
-            </div>
-            <button type="button" class="btn btn-secondary button-project">
-              <a
-                href="/Projects/Business-Form/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+          <div class="col">
+            <div class="card h-100 shadow" id="card-color">
+              <a href="">
+                <img
+                  src="/images/projectIMG/printing-cost-comp.png"
+                  class="card-img-top"
+                  alt="..."
+                />
               </a>
-            </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Druckkosten Vergleich</h5>
+                <p class="card-text">
+                  Der einfache Vergleich zwischen 2 verschiedenen Druckern, um
+                  herauszufinden welcher der beiden günstiger ist.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary button-project">
+                <a
+                  href="/Projects/PrintingCostComparision/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/Calculator/index.html">
-              <img
-                src="/images/projectIMG/calculator.png"
-                class="card-img-top h-100"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Taschenrechner</h5>
-              <p class="card-text">
-                Ein Projekt was so gut wie jeder Softwareentwickler mal gemacht
-                haben muss.
-              </p>
-            </div>
-            <button type="button" class="btn btn-secondary button-project">
-              <a
-                href="/Projects/Calculator/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
+          <div class="col">
+            <div class="card h-100 shadow" id="card-color">
+              <a href="/Projects/PhoneCostComparision/index.html">
+                <img
+                  src="/images/projectIMG/phone-cost-comp.png"
+                  class="card-img-top h-100"
+                  alt="..."
+                />
               </a>
-            </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Telefonkosten Vergleich</h5>
+                <p class="card-text">
+                  Vergleiche 2 verschiedene Anbieter und finde heraus welches
+                  der beiden mit der Zeit am günstigsten ist.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary button-project">
+                <a
+                  href="/Projects/PhoneCostComparision/index.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow" id="card-color">
+              <a href="/Projects/HotelReservation/HotelReservation.html">
+                <img
+                  src="/images/projectIMG/hotel-reservierung.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Hotel Reservierung</h5>
+                <p class="card-text">
+                  Ermöglicht Produkte zu der Einkaufsliste hinzuzufügen und dazu
+                  eine Anzahl an Produkten festzulegen.
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary button-project">
+                <a
+                  href="/Projects/HotelReservation/HotelReservation.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow" id="card-color">
+              <a href="/Projects/InterestCalculator/Zinseszins.html">
+                <img
+                  src="/images/projectIMG/zinseszins-rechner.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title text-center">Zinseszins Rechner</h5>
+                <p class="card-text">
+                  Die Berechnung des Zinseszins, dargestellt in einer Tabelle.
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary button-project">
+                <a
+                  href="/Projects/InterestCalculator/Zinseszins.html"
+                  class="text-light fw-bold text-decoration-none"
+                >
+                  Zum Projekt
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <a href="">
-              <img
-                src="/images/projectIMG/currency-converter.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Währungsrechner</h5>
-              <p class="card-text">
-                Wie der Name schon sagt, ermöglicht dieses Projekt, von EURO zu
-                USD und andersrum umzuwandeln.
-              </p>
-            </div>
-            <button type="button" class="btn btn-primary button-project">
-              <a
-                href="/Projects/CurrencyConverter/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/imageSelector/index.html">
-              <img
-                src="/images/projectIMG/image-selector.png"
-                class="card-img-top h-100"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Image Selector</h5>
-              <p class="card-text">
-                Ein kleines JavaScript Projekt um Bilder durchzugehen. Vor,
-                zurück und zurücksetzen.
-              </p>
-            </div>
-            <button type="button" class="btn btn-primary button-project">
-              <a
-                href="/Projects/imageSelector/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/ShoppingList/index.html">
-              <img
-                src="/images/projectIMG/shopping-list.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Einkaufsliste</h5>
-              <p class="card-text">
-                Ermöglicht Produkte zu der Einkaufsliste hinzuzufügen und dazu
-                eine Anzahl an Produkten festzulegen.
-              </p>
-            </div>
-            <button type="button" class="btn btn-secondary button-project">
-              <a
-                href="/Projects/ShoppingList/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/RandomColor/index.html">
-              <img
-                src="/images/projectIMG/color-picker.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Farbwähler</h5>
-              <p class="card-text">
-                Verändert den Hintergrund mit einer Farbe, welches zufällig
-                generiert wird.
-              </p>
-            </div>
-            <button type="button" class="btn btn-secondary button-project">
-              <a
-                href="/Projects/RandomColor/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
-        <div class="col">
-          <div class="card h-100">
-            <a href="">
-              <img
-                src="/images/projectIMG/printing-cost-comp.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Druckkosten Vergleich</h5>
-              <p class="card-text">
-                Der einfache Vergleich zwischen 2 verschiedenen Druckern, um
-                herauszufinden welcher der beiden günstiger ist.
-              </p>
-            </div>
-            <button type="button" class="btn btn-primary button-project">
-              <a
-                href="/Projects/PrintingCostComparision/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/PhoneCostComparision/index.html">
-              <img
-                src="/images/projectIMG/phone-cost-comp.png"
-                class="card-img-top h-100"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Telefonkosten Vergleich</h5>
-              <p class="card-text">
-                Vergleiche 2 verschiedene Anbieter und finde heraus welches der beiden mit der Zeit am günstigsten ist.
-              </p>
-            </div>
-            <button type="button" class="btn btn-primary button-project">
-              <a
-                href="/Projects/PhoneCostComparision/index.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/HotelReservation/HotelReservation.html">
-              <img
-                src="/images/projectIMG/hotel-reservierung.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Hotel Reservierung</h5>
-              <p class="card-text">
-                Ermöglicht Produkte zu der Einkaufsliste hinzuzufügen und dazu
-                eine Anzahl an Produkten festzulegen.
-              </p>
-            </div>
-            <button type="button" class="btn btn-secondary button-project">
-              <a
-                href="/Projects/HotelReservation/HotelReservation.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <a href="/Projects/InterestCalculator/Zinseszins.html">
-              <img
-                src="/images/projectIMG/zinseszins-rechner.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title text-center">Zinseszins Rechner</h5>
-              <p class="card-text">
-                Die Berechnung des Zinseszins, dargestellt in einer Tabelle.
-              </p>
-            </div>
-            <button type="button" class="btn btn-secondary button-project">
-              <a
-                href="/Projects/InterestCalculator/Zinseszins.html"
-                class="text-light text-dDrucker 1ration-none fw-bold"
-              >
-                Zum Projekt
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
+    </div>
 
     <div class="d-flex justify-content-center align-items-center my-5">
       <button type="button" class="btn btn-primary">
-        <a href="#start" class="text-light text-dDrucker 1ration-none fs-5"
+        <a
+          href="#start"
+          class="text-light fs-5 text-decoration-none"
+          id="footer-button"
           >Zurück zum Seitenanfang</a
         >
       </button>
     </div>
 
     <footer
-      class="navbar bg-primary mt-5 d-flex justify-content-center align-items-center"
+      class="navbar mt-5 d-flex justify-content-center align-items-center"
     >
       <p class="fst-italic text-light fw-light fs-6 m-0 py-2">
         Made by M. Latif Akan
       </p>
+      <!-- Button to report a bug 
+        <button class="d-flex position-absolute justify-content-end">Bug Report</button>
+      -->
     </footer>
 
     <script src="app.js"></script>
