@@ -38,6 +38,10 @@ const images = [
 //     }));
 // }
 
+function openPDF() {
+    window.open('/images/Lebenslauf.pdf', '_blank');
+}
+
 const buttons = document.querySelectorAll('button');
 let getImg = document.querySelector('img');
 let count = 1;

@@ -11,9 +11,41 @@
     box-shadow: 0 0 25px 1px var(--second-bg-color);
 }
 
+.header-button:hover {
+    background-color: var(--accent-color);
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    border: 2px solid var(--second-bg-color);
+    box-shadow: 0 0 25px 1px var(--second-bg-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
 .card {
     background-color: var(--primary-color);
     color: var(--text-color);
+}
+
+.card p {
+    font-size: 24px;
+    text-align: center;
+}
+
+#tech-stack-img {
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+}
+
+nav {
+    background-color: var(--second-bg-color);
 }
 
 #card-color {
@@ -59,14 +91,18 @@ h5 {
 }
 
 h3 {
-    font-size: 45px;
+    font-size: 55px;
 }
 
 h2 {
-    font-size: 65px;
+    font-size: 70px;
 }
 
-p {
+#startseite-content p {
+    font-size: 20px;
+}
+
+#about-me-text p {
     font-size: 21px;
 }
 
@@ -83,8 +119,13 @@ p {
         text-align: center;
     }
 }
-@media (min-width: 768px) { /* Small (SM) */ }
+@media (max-width: 768px) {
+}
 @media (max-width: 992px) {
+    #startseite-button {
+        background-color: green;
+        width: 100%;
+    }
     #startseite-text {
         text-align: center;
     }
@@ -92,8 +133,14 @@ p {
         font-size: 30px;
     }
     #about-me-text p {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
+    }
+    #startseite-img {
+        width: 35em;
+    }
+    #carouselExampleIndicators {
+        width: 40em;
     }
 }
 @media (min-width: 1200px) { /* Large (LG) */ }

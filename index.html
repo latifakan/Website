@@ -19,7 +19,6 @@
     <title>Projects Website</title>
   </head>
   <body>
-
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light py-3 position-absolute w-100"
@@ -39,67 +38,64 @@
             class="navbar-nav w-100 d-flex justify-content-between align-items-center gap-2"
           >
             <li class="nav-item">
-              <button type="button" class="btn btn-sm header-button">
-                <a
-                  href="#about-me"
-                  class="nav-link active fw-bold fs-5 py-0 text-light"
-                  >Über Mich</a
-                >
-              </button>
+              <a
+                href="#about-me"
+                class="nav-link px-3 rounded py-1 header-button active fw-bold fs-5 py-0 text-light"
+                >Über Mich
+              </a>
             </li>
+
             <li class="nav-item">
-              <button type="button" class="btn btn-sm header-button">
-                <a
-                  href="#tech-stack"
-                  class="nav-link nav-link fw-bold fs-5 py-0 text-light"
-                  >Tech Stack & Tools</a
-                >
-              </button>
+              <a
+                href="#tech-stack"
+                class="nav-link px-3 rounded py-1 header-button active fw-bold fs-5 py-0 text-light"
+                >Tech Stack & Tools
+              </a>
             </li>
+
             <li class="nav-item">
-              <button type="button" class="btn btn-sm header-button">
-                <a
-                  href="#projects"
-                  class="nav-link nav-link fw-bold fs-5 py-0 text-light"
-                  >Projects</a
-                >
-              </button>
+              <a
+                href="#projects"
+                class="nav-link px-3 rounded py-1 header-button active fw-bold fs-5 py-0 text-light"
+                >Projects
+              </a>
             </li>
+
             <li class="nav-item">
               <div class="dropdown">
                 <button
-                  class="btn btn-sm header-button dropdown-toggle fw-bold fs-5 text-light"
+                  class="btn btn-sm header-button dropdown-toggle fw-bold fs-5 text-light rounded"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Socials & Kontakt
                 </button>
-                <ul class="dropdown-menu header-button">
+                <ul class="dropdown-menu">
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center text-light"
                       href="https://www.linkedin.com/in/mehmed-latif-akan/"
                       >LinkedIn</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center text-light"
                       href="https://x.com/latif99akan"
                       >Twitter / X</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center text-light"
                       href="https://github.com/L0x1100011"
                       >GitHub</a
                     >
                   </li>
                   <li>
                     <a
-                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center"
+                      class="nav-link dropdown-item fw-bold fs-5 d-flex justify-content-center text-light"
                       href="mailto:latifakan1999@gmail.com"
                       >Kontakt per Mail</a
                     >
@@ -114,7 +110,9 @@
 
     <!-- Startseite -->
 
-    <div class="vh-100 d-flex align-items-center justify-content-center pt-5 w-100">
+    <div
+      class="vh-100 d-flex align-items-center justify-content-center pt-5 w-100"
+    >
       <div class="background-wave" style="z-index: -1">
         <img
           class="w-100 position-absolute"
@@ -125,7 +123,7 @@
       </div>
 
       <div
-        class="container-lg row d-flex align-items-center justify-content-center px-5"
+        class="row d-flex align-items-center justify-content-center px-5 w-100"
         id="startseite-content"
       >
         <div class="col-lg-6 d-flex justify-content-center flex-column lh-lg">
@@ -143,17 +141,19 @@
               gebracht, eigenständig die Frontend Entwicklung zu lernen und mich
               in die Backend-Entwicklung einzuarbeiten.
             </p>
-            <button
-              type="button"
-              class="btn btn-primary mt-2 text-light fw-bold"
-              style="width: 40%"
-              data-bs-toggle="modal"
-              data-bs-target="#messageModal"
-            >
-              Kontakt
-            </button>
+
+            <div class="bg-secondary rounded w-50" id="startseite-button">
+              <a href="mailto:latifakan1999@gmail.com" class="text-light">
+                <button
+                  type="button"
+                  class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                >
+                  Kontakt
+                </button>
+              </a>
+            </div>
           </div>
-          <div
+          <!-- <div
             class="modal fade"
             id="messageModal"
             tabindex="-1"
@@ -192,7 +192,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="col-lg-6" id="startseite-img">
@@ -217,7 +217,7 @@
                 <polygon points="55,20 145,20 180,100 145,180 55,180 20,100" />
               </clipPath>
               <image
-                href="/images/profileIMG/profile-img-2.jpg"
+                href="/images/profileIMG/profile-img-1.jpg"
                 width="200"
                 height="200"
                 clip-path="url(#hexagon-clip)"
@@ -229,14 +229,15 @@
     </div>
 
     <!-- About Me -->
+
     <div
-      class="row d-flex gx-0 justify-content-center vh-100"
+      class="row d-flex gx-0 justify-content-center vh-100 pb-5"
       id="about-me"
     >
-      <h2 class="text-center fw-bold text-light">
-        ABOUT<span class="text-primary"> ME</span>
-      </h2>
       <div class="row d-flex justify-content-center align-items-center">
+        <h2 class="text-center fw-bold text-light">
+          ÜBER<span class="text-primary"> MICH</span>
+        </h2>
         <div
           id="carouselExampleIndicators"
           class="carousel slide col-lg-6 col-12"
@@ -343,31 +344,38 @@
         <div class="col-lg-6 col-12">
           <blockquote class="blockquote fs-2 px-3 p-3" id="about-me-text">
             <p>
-              Hallo zusammen. Ich bin der Mehmed Latif Akan, wobei man mich auch
-              nur Latif nennt.
+              Hallo zusammen, ich bin der Mehmed Latif Akan, aber die meisten
+              nennen mich einfach Latif.
             </p>
             <p>
-              Schon seit jungen Jahren interessiere ich mich für die Technik. So
-              habe ich schon mit 17 meinen eigenen Computer zusammengebaut und
-              die Komponenten selbst konfiguriert.
+              Schon seit meiner Jugend interessiere ich mich für die Technik.
+              Mit 17 habe ich meinen eigenen Computer aus einzelnen Komponenten
+              zusammengestellt und so schon die Erfahrung mit der Hardware
+              machen können.
             </p>
             <p>
-              Mit der Softwareentwicklung hatte ich schon während meiner
-              Fachhochschulreife, wo ich auch parallel eine Berufsausbildung zum
-              Kaufmännischen Ass. für Informationsverarbeitung absolviert
-              habe.Dort haben ich mit HTML, CSS und JS gearbeitet und konnte so
-              schon meine ersten Erfahurngen sammeln.
+              Meine ersten Erfahrungen in der Softwareentwicklung sammelte ich
+              während meiner Fachhochschulreife, die ich parallel mit einer
+              Berufsausbildung zum kaufmännischen Assistenten für
+              Informationsverarbeitung absolvierte. Dort arbeitete ich mit HTML,
+              CSS und JavaScript.
             </p>
             <p>
               Während meines Studiums an der FH Aachen, habe ich mit C++
               gearbeitet und habe während dieser Zeit erste Behrührungspunkte
-              mit der Objektorierntierung.
+              mit der Objektorierntierung sammeln können.
             </p>
             <p>
-              Derzeit bringe ich mir die Frontend-Entwicklung bei und möchte
-              danach auch in die Backend-Entwicklung gehen.
+              Aktuell konzentriere ich mich auf die Frontend-Entwicklung und
+              plane, mich anschließend auch mit der Backend-Entwicklung
+              auseinanderzusetzen.
             </p>
           </blockquote>
+          <div class="container text-center d-flex">
+            <button class="btn btn-primary" onclick="openPDF()">
+              Lebenslauf anzeigen
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -375,122 +383,123 @@
     <!-- Tech Stack -->
 
     <div
-      class="container-lg vh-100 d-flex flex-column justify-content-center position-relative"
+      class="container-lg vh-100 d-flex flex-column position-relative"
       id="tech-stack"
     >
-      <div class="position-absolute top-0 pt-5 w-100">
-        <h2 class="text-center fw-bold text-light">TECH STACK / TOOLS</h2>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="90"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
+      <h2 class="text-center fw-bold text-light pt-5">TECH STACK / TOOLS</h2>
+
+      <div class="pt-5 d-flex justify-content-center flex-column vh-100 z-2">
         <div
-          class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 90%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="90"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          HTML
+          <div
+            class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 90%"
+          >
+            HTML
+          </div>
         </div>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="80"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
         <div
-          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 80%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="80"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          CSS
+          <div
+            class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 80%"
+          >
+            CSS
+          </div>
         </div>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="55"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
         <div
-          class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 55%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="55"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          JavaScript
+          <div
+            class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 55%"
+          >
+            JavaScript
+          </div>
         </div>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="48"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
         <div
-          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 48%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="48"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          C++
+          <div
+            class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 48%"
+          >
+            C++
+          </div>
         </div>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="50"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
         <div
-          class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 50%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          Git
+          <div
+            class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 50%"
+          >
+            Git
+          </div>
         </div>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="65"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
         <div
-          class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 65%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="65"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          Bootstrap
+          <div
+            class="progress-bar bg-secondary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 65%"
+          >
+            Bootstrap
+          </div>
         </div>
-      </div>
-      <div
-        class="progress mb-3"
-        role="progressbar"
-        aria-label="progress"
-        aria-valuenow="70"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="height: 30px"
-      >
         <div
-          class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
-          style="width: 70%"
+          class="progress mb-3"
+          role="progressbar"
+          aria-label="progress"
+          aria-valuenow="70"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="height: 30px"
         >
-          Visual Studio Code
+          <div
+            class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5 fw-bold letter-spacing-2"
+            style="width: 70%"
+          >
+            Visual Studio Code
+          </div>
         </div>
       </div>
     </div>
@@ -499,7 +508,6 @@
 
     <div id="projects" class="py-5">
       <h2 class="text-center fw-bold text-light">PROJEKTE</h2>
-
       <div class="container mt-5">
         <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
           <div class="col">
@@ -518,14 +526,16 @@
                   Stein, Papier festhalten.
                 </p>
               </div>
-              <button type="button" class="btn btn-primary button-project">
-                <a
-                  href="/Projects/ScoreKeeper/index.html"
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Zum Projekt
+              <div class="bg-secondary rounded">
+                <a href="/Projects/ScoreKeeper/index.html" class="text-light">
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -544,14 +554,19 @@
                   technische Daten zu den einzelnen Fahrzeugen aufliste.
                 </p>
               </div>
-              <button type="button" class="btn btn-primary button-project">
+              <div class="bg-secondary rounded">
                 <a
                   href="/Projects/TeslaWebsite/TeslaHomepage/homepage.html"
-                  class="text-light fw-bold text-decoration-none"
+                  class="text-light"
                 >
-                  Zum Projekt
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -570,14 +585,16 @@
                   erfahren möchte.
                 </p>
               </div>
-              <button type="button" class="btn btn-secondary button-project">
-                <a
-                  href="/Projects/Business-Form/index.html"
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Zum Projekt
+              <div class="bg-secondary rounded">
+                <a href="/Projects/Business-Form/index.html" class="text-light">
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-secondary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -596,14 +613,16 @@
                   gemacht haben muss.
                 </p>
               </div>
-              <button type="button" class="btn btn-secondary button-project">
-                <a
-                  href="/Projects/Calculator/index.html"
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Zum Projekt
+              <div class="bg-secondary rounded">
+                <a href="/Projects/Calculator/index.html" class="text-light">
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-secondary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -625,14 +644,19 @@
                   zu USD und andersrum umzuwandeln.
                 </p>
               </div>
-              <button type="button" class="btn btn-primary button-project">
+              <div class="bg-secondary rounded">
                 <a
                   href="/Projects/CurrencyConverter/index.html"
-                  class="text-light fw-bold text-decoration-none"
+                  class="text-light"
                 >
-                  Zum Projekt
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -651,14 +675,16 @@
                   zurück und zurücksetzen.
                 </p>
               </div>
-              <button type="button" class="btn btn-primary button-project">
-                <a
-                  href="/Projects/imageSelector/index.html"
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Zum Projekt
+              <div class="bg-secondary rounded">
+                <a href="/Projects/imageSelector/index.html" class="text-light">
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -677,14 +703,16 @@
                   eine Anzahl an Produkten festzulegen.
                 </p>
               </div>
-              <button type="button" class="btn btn-secondary button-project">
-                <a
-                  href="/Projects/ShoppingList/index.html"
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Zum Projekt
+              <div class="bg-secondary rounded">
+                <a href="/Projects/ShoppingList/index.html" class="text-light">
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-secondary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -703,14 +731,16 @@
                   generiert wird.
                 </p>
               </div>
-              <button type="button" class="btn btn-secondary button-project">
-                <a
-                  href="/Projects/RandomColor/index.html"
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Zum Projekt
+              <div class="bg-secondary rounded">
+                <a href="/Projects/RandomColor/index.html" class="text-light">
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-secondary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -732,14 +762,19 @@
                   herauszufinden welcher der beiden günstiger ist.
                 </p>
               </div>
-              <button type="button" class="btn btn-primary button-project">
+              <div class="bg-secondary rounded">
                 <a
                   href="/Projects/PrintingCostComparision/index.html"
-                  class="text-light fw-bold text-decoration-none"
+                  class="text-light"
                 >
-                  Zum Projekt
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -758,14 +793,19 @@
                   der beiden mit der Zeit am günstigsten ist.
                 </p>
               </div>
-              <button type="button" class="btn btn-primary button-project">
+              <div class="bg-secondary rounded">
                 <a
                   href="/Projects/PhoneCostComparision/index.html"
-                  class="text-light fw-bold text-decoration-none"
+                  class="text-light"
                 >
-                  Zum Projekt
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -784,14 +824,19 @@
                   eine Anzahl an Produkten festzulegen.
                 </p>
               </div>
-              <button type="button" class="btn btn-secondary button-project">
+              <div class="bg-secondary rounded">
                 <a
                   href="/Projects/HotelReservation/HotelReservation.html"
-                  class="text-light fw-bold text-decoration-none"
+                  class="text-light"
                 >
-                  Zum Projekt
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-secondary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -809,14 +854,19 @@
                   Die Berechnung des Zinseszins, dargestellt in einer Tabelle.
                 </p>
               </div>
-              <button type="button" class="btn btn-secondary button-project">
+              <div class="bg-secondary rounded">
                 <a
                   href="/Projects/InterestCalculator/Zinseszins.html"
-                  class="text-light fw-bold text-decoration-none"
+                  class="text-light"
                 >
-                  Zum Projekt
+                  <button
+                    type="button"
+                    class="fw-bold btn btn-secondary button-project text-decoration-none w-100"
+                  >
+                    Zum Projekt
+                  </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         </div>
