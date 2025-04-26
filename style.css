@@ -109,6 +109,10 @@ h2 {
 @media (max-width: 576px) {
     #startseite-text {
         text-align: center;
+        width: 100%;
+    }
+    #startseite-img {
+        display: none;
     }
     #startseite-text h3 {
         font-size: 30px;

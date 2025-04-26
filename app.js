@@ -12,32 +12,6 @@ const images = [
     "/images/image4.jpg"
 ];
 
-// function goForward(count) {
-//     if (imgForward.addEventListener('click', function() {
-//         console.log(count)
-//         console.log(`${count} + src: ${getImg.src}`)
-//         if (count === images.length) {
-//             count = 0;
-//         }
-//         getImg.src = images[count];
-//         count++;
-//         console.log(count)
-//         console.log(`${count} + src: ${getImg.src}`)
-//     }));
-// }
-
-// function goBackward(count) {    
-//     if (imgBackward.addEventListener('click', function() {
-//         console.log(count)
-//         if (count === -1) {
-//             count = images.length - 1;
-//         }
-//         getImg.src = images[count];
-//         count--;
-//         console.log(count)
-//     }));
-// }
-
 function openPDF() {
     window.open('/images/Lebenslauf.pdf', '_blank');
 }
@@ -53,30 +27,6 @@ buttons.forEach((button, index) => {
         console.log('${index}, ${button}')
     }));
 });
-
-// function btnClicked(count) {
-//     if (imgSelector.addEventListener('click', function() {
-//         console.log(count)
-//         console.log(`${count} + src: ${getImg.src}`)
-//         if (count === images.length) {
-//             count = 0;
-//         }
-//         getImg.src = images[count];
-//         count++;
-//         console.log(count)
-//         console.log(`${count} + src: ${getImg.src}`)
-//     })); else if (imgBackward.addEventListener('click', function() {
-//         console.log(count)
-//         if (count === -1) {
-//             count = images.length - 1;
-//         }
-//         getImg.src = images[count];
-//         count--;
-//         console.log(count)
-//     }));
-// }
-
-// btnClicked(count);
 
 function scrollProjects() {
     document.getElementById("project").scrollIntoView();
