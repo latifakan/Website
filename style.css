@@ -90,72 +90,125 @@ h5 {
     font-size: 28px;
 }
 
-h3 {
-    font-size: 55px;
-}
-
-h2 {
-    font-size: 70px;
-}
-
-#startseite-content p {
-    font-size: 20px;
-}
-
 #about-me-text p {
     font-size: 21px;
 }
 
-@media (max-width: 576px) {
+/* RESPONSIVE DESIGN */
+
+/* Extra small devices (phones) */
+@media (min-width: 375px) {
+    /* startseite content */
     #startseite-text {
-        text-align: center;
         width: 100%;
     }
-    #startseite-img {
-        display: none;
+    #startseite-content {
+        text-align: center;
     }
-    #startseite-text h3 {
-        font-size: 30px;
+    #startseite-img {
+        width: 80%;
+    }
+    #kontakt-button {
+        width: 40%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* startseite content */
+    #startseite-text {
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    #startseite-content {
+        text-align: center;
+    }
+    #startseite-img {
+        width: 70%;
+    }
+    #kontakt-button {
+        width: 50%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* startseite content */
+    #startseite-text {
+        width: 100%;
+    }
+    #startseite-content {
+        text-align: center;
+    }
+    #startseite-img {
+        width: 60%;
+    }
+    #kontakt-button {
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* startseite content */
+    #startseite-text {
+        width: 100%;
+        padding-right: 40px;
+    }
+    #startseite-content {
+        text-align: center;
+    }
+    #startseite-img {
+        width: 50%;
+    }
+    #kontakt-button {
+        width: 40%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* startseite content */
+    #startseite-content {
+        text-align: center;
+    }
+    #startseite-img {
+        width: 50%;
+    }
+    #kontakt-button {
+        width: 40%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* startseite content */
+    #startseite-content {
+        text-align: center;
+    }
+    #startseite-text {
+        h2 {
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    #startseite-img {
+        width: 40%;
+    }
+    #kontakt-button {
+        width: 40%;
     }
 
-    #about-me-text p {
-        font-size: 16px;
-        text-align: center;
-    }
-    #startseite-button {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 992px) {
-    #startseite-button {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    #startseite-text {
-        text-align: center;
-    }
-    #startseite-text h3 {
-        font-size: 30px;
-    }
-    #about-me-text p {
-        font-size: 18px;
-        text-align: center;
-    }
-    #startseite-img {
-        width: 35em;
-    }
-    #carouselExampleIndicators {
-        width: 40em;
-    }
-}
-@media (min-width: 1200px) { /* Large (LG) */ }
-@media (min-width: 1400px) { 
-    p {
-        font-size: 32px;
-    }
 }

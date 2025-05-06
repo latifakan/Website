@@ -111,7 +111,8 @@
     <!-- Startseite -->
 
     <div
-      class="vh-100 d-flex align-items-center justify-content-center pt-5 w-100"
+      class="vh-100 d-flex align-items-center justify-content-center w-100"
+      id="homepage"
     >
       <div class="background-wave" style="z-index: -1">
         <img
@@ -123,81 +124,13 @@
       </div>
 
       <div
-        class="row d-flex align-items-center justify-content-center px-5 w-100"
+        class="row d-flex align-items-center justify-content-center w-100"
         id="startseite-content"
       >
-        <div class="col-lg-6 d-flex justify-content-center flex-column lh-lg">
-          <div id="startseite-text">
-            <h3>Hallo, ich bin</h3>
-            <h2>Mehmed Latif Akan</h2>
 
-            <h3>
-              und interessiere mich für die
-              <span class="text-primary">Frontend-Entwickler</span>.
-            </h3>
+        <!-- homepage img -->
 
-            <p class="lh-sm">
-              Meine Leidenschaft für die Softwareentwicklung hat mich dazu
-              gebracht, eigenständig die Frontend Entwicklung zu lernen und mich
-              in die Backend-Entwicklung einzuarbeiten.
-            </p>
-
-            <div id="startseite-button">
-              <div class="bg-secondary rounded w-50">
-                <a href="mailto:latifakan1999@gmail.com" class="text-light">
-                  <button
-                    type="button"
-                    class="fw-bold btn btn-primary button-project text-decoration-none w-100"
-                  >
-                    Kontakt
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- <div
-            class="modal fade"
-            id="messageModal"
-            tabindex="-1"
-            aria-labelledby="messageModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="messageModalLabel">
-                    Nachricht schreiben
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    placeholder="Schreibe deine Nachricht..."
-                  ></textarea>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Schließen
-                  </button>
-                  <button type="button" class="btn btn-primary">Senden</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-
-        <div class="col-lg-6" id="startseite-img">
+        <div class="col-md-6" id="startseite-img">
           <div class="d-flex align-items-center justify-content-center">
             <svg viewBox="0 0 200 200" width="800" class="profile-img">
               <defs>
@@ -225,6 +158,37 @@
                 clip-path="url(#hexagon-clip)"
               />
             </svg>
+          </div>
+        </div>
+
+        <!-- homepage text -->
+
+        <div class="col-lg-6 d-flex justify-content-center flex-column lh-lg gap-1">
+          <div id="startseite-text">
+            <h2>Hallo, ich bin der Latif</h2>
+
+            <h3>
+              und interessiere mich für die
+              <span class="text-primary">Software-Entwicklung</span>.
+            </h3>
+
+            <p class="lh-sm">
+              Meine Leidenschaft für die Softwareentwicklung hat mich dazu
+              gebracht, eigenständig die Frontend Entwicklung zu lernen und mich
+              in die Backend-Entwicklung einzuarbeiten.
+            </p>
+          </div>
+
+          <div>
+            <a href="mailto:latifakan1999@gmail.com" class="text-light">
+              <button
+                type="button"
+                class="fw-bold btn btn-sm btn-primary button-project text-decoration-none rounded"
+                id="kontakt-button"
+              >
+                Kontakt
+              </button>
+            </a>
           </div>
         </div>
       </div>
