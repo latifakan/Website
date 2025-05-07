@@ -127,7 +127,6 @@
         class="row d-flex align-items-center justify-content-center w-100"
         id="startseite-content"
       >
-
         <!-- homepage img -->
 
         <div class="col-md-6" id="startseite-img">
@@ -163,7 +162,9 @@
 
         <!-- homepage text -->
 
-        <div class="col-lg-6 d-flex justify-content-center flex-column lh-lg gap-1">
+        <div
+          class="col-lg-6 d-flex justify-content-center flex-column lh-lg gap-1"
+        >
           <div id="startseite-text">
             <h2>Hallo, ich bin der Latif</h2>
 
@@ -204,15 +205,16 @@
         <h2 class="text-center fw-bold text-light">
           ÜBER<span class="text-primary"> MICH</span>
         </h2>
+
         <div
-          id="carouselExampleIndicators"
+          id="about-me-img"
           class="carousel slide col-lg-6 col-12"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -220,25 +222,25 @@
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide-to="3"
               aria-label="Slide 4"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide-to="4"
               aria-label="Slide 5"
             ></button>
@@ -284,7 +286,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide="prev"
             >
               <span
@@ -296,7 +298,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#about-me-img"
               data-bs-slide="next"
             >
               <span
@@ -307,17 +309,17 @@
             </button>
           </div>
         </div>
-        <div class="col-lg-6 col-12">
-          <blockquote class="blockquote fs-2 px-3 p-3" id="about-me-text">
+
+        <div class="col-lg-6 col-12 lh-sm" id="about-me-section">
+          <div id="about-me-text">
             <p>
-              Hallo zusammen, ich bin der Mehmed Latif Akan, aber die meisten
-              nennen mich einfach Latif.
+              Mein Name ist Mehmed Latif Akan, wobei man mich auch nur Latif
+              nennt.
             </p>
             <p>
-              Schon seit meiner Jugend interessiere ich mich für die Technik.
-              Mit 17 habe ich meinen eigenen Computer aus einzelnen Komponenten
-              zusammengestellt und so schon die Erfahrung mit der Hardware
-              machen können.
+              Mit 17 habe ich meinen ersten eigenen Computer aus einzelnen
+              Komponenten zusammengestellt und so schon die Erfahrung mit der
+              Hardware machen können.
             </p>
             <p>
               Meine ersten Erfahrungen in der Softwareentwicklung sammelte ich
@@ -329,14 +331,14 @@
             <p>
               Während meines Studiums an der FH Aachen, habe ich mit C++
               gearbeitet und habe während dieser Zeit erste Behrührungspunkte
-              mit der Objektorierntierung sammeln können.
+              mit der Objektorierntierung gesammelt.
             </p>
             <p>
               Aktuell konzentriere ich mich auf die Frontend-Entwicklung und
-              plane, mich anschließend auch mit der Backend-Entwicklung
-              auseinanderzusetzen.
+              werde mich anschließend in die Backend-Entwicklung einarbeiten.
             </p>
-          </blockquote>
+          </div>
+
           <div
             class="container text-center d-flex d-flex justify-content-center"
           >
@@ -476,7 +478,7 @@
 
     <div id="projects" class="py-5">
       <h2 class="text-center fw-bold text-light">PROJEKTE</h2>
-      <div class="container mt-5">
+      <div class="mt-5">
         <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
           <div class="col">
             <div class="card h-100" id="card-color">
@@ -841,11 +843,11 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center my-5">
+    <div class="d-flex justify-content-center align-items-center my-5" id="footer">
       <button type="button" class="btn btn-primary">
         <a
           href="#start"
-          class="text-light fs-5 text-decoration-none"
+          class="text-light text-decoration-none"
           id="footer-button"
           >Zurück zum Seitenanfang</a
         >
