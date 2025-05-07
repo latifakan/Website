@@ -33,3 +33,21 @@ button:hover {
     border-radius: 1em;
     transition: border-radius .5s transparent;
 }
+
+#website-button {   
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1em;    
+    width: 20%;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        background-color: #0d6efd;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 0.3em 1.5em;
+    }
+}
