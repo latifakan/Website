@@ -1,269 +1,271 @@
 :root {
-    --primary-color: #1f242d;
-    --second-bg-color: #323946;
-    --accent-color: #0d6efd;
-    --text-color: #fff;
+  --primary-color: #1b263b;
+  --second-bg-color: #323946;
+  --accent-color: #3dd6d0;
+  --text-color: #fff;
+}
+/* #1B263B
+#3DD6D0 */
+.header-button {
+  background-color: var(--primary-color);
+  border: 2px solid var(--second-bg-color);
+  box-shadow: 0 0 25px 1px var(--second-bg-color);
 }
 
-.header-button {
-    background-color: var(--primary-color);
-    border: 2px solid var(--second-bg-color);
-    box-shadow: 0 0 25px 1px var(--second-bg-color);
+#toggle {
+    background-color: white;
 }
 
 .header-button:hover {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .dropdown-menu {
-    background-color: var(--primary-color);
-    border: 2px solid var(--second-bg-color);
-    box-shadow: 0 0 25px 1px var(--second-bg-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--second-bg-color);
+  box-shadow: 0 0 25px 1px var(--second-bg-color);
 }
 
 .dropdown-item:hover {
-    background-color: var(--accent-color);
-    cursor: pointer;
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .card {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .card p {
-    font-size: 24px;
-    text-align: center;
+  font-size: 24px;
+  text-align: center;
 }
 
 #tech-stack-img {
-    width: 50%;
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    transform: scaleX(-1);
+  width: 50%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  transform: scaleX(-1);
 }
 
 nav {
-    background-color: var(--second-bg-color);
+  background-color: var(--second-bg-color);
 }
 
 #card-color {
-    border: 2px solid var(--primary-color);
-    border-radius: 8px;
-    box-shadow: 0 0 15px 3px var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 0 15px 3px var(--primary-color);
 }
 
 #footer-button {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 #footer-button {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #about-me {
-    background-color: var(--second-bg-color);
+  background-color: var(--second-bg-color);
 }
 
 #tech-stack {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 footer {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 body {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-    color: var(--text-color);
-    background-color: var(--primary-color);
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 #about-me-img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 #projects {
-    background-color: var(--second-bg-color);
+  background-color: var(--second-bg-color);
 }
 
 h5 {
-    font-size: 28px;
+  font-size: 28px;
 }
-
-
 
 /* RESPONSIVE DESIGN */
 
 /* Extra small devices (phones) */
 @media (min-width: 375px) {
-    /* startseite content */
-    #startseite-text {
-        width: 100%;
+  /* startseite content */
+  #startseite-text {
+    width: 100%;
+  }
+  #startseite-content {
+    text-align: center;
+  }
+  #startseite-img {
+    width: 80%;
+  }
+  #kontakt-button {
+    width: 40%;
+  }
+  #about-me-text {
+    text-align: center;
+    font-size: 17px;
+  }
+  #about-me-img {
+    width: 80%;
+  }
+  .card-body {
+    p {
+      font-size: 20px;
     }
-    #startseite-content {
-        text-align: center;
+    h5 {
+      font-size: 28px;
     }
-    #startseite-img {
-        width: 80%;
+  }
+  #projects {
+    padding: 10px 50px;
+
+    button {
+      font-size: 20px;
     }
-    #kontakt-button {
-        width: 40%;
-    }
-    #about-me-text {
-        text-align: center;
-        font-size: 17px;
-    }
-    #about-me-img {
-        width: 80%;
-    }
-    .card-body {
-        p {
-            font-size: 20px;
-        }
-        h5 {
-            font-size: 28px;
-        }
-    }
-    #projects {
-        padding: 10px 50px;
-        
-        button {
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    /* startseite content */
-    #startseite-text {
-        h2 {
-            font-size: 35px;
-        }
-        h3 {
-            font-size: 30px;
-        }
-        p {
-            font-size: 16px;
-        }
+  /* startseite content */
+  #startseite-text {
+    h2 {
+      font-size: 35px;
     }
-    #startseite-content {
-        text-align: center;
+    h3 {
+      font-size: 30px;
     }
-    #startseite-img {
-        width: 70%;
+    p {
+      font-size: 16px;
     }
-    #kontakt-button {
-        width: 50%;
-    }
-    #about-me-text {
-        font-size: 18px;
-    }
-    #projects {
-        padding: 10px 60px;
-    }
+  }
+  #startseite-content {
+    text-align: center;
+  }
+  #startseite-img {
+    width: 70%;
+  }
+  #kontakt-button {
+    width: 50%;
+  }
+  #about-me-text {
+    font-size: 18px;
+  }
+  #projects {
+    padding: 10px 60px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    /* startseite content */
-    #startseite-text {
-        width: 100%;
-    }
-    #startseite-content {
-        text-align: center;
-    }
-    #startseite-img {
-        width: 60%;
-    }
-    #kontakt-button {
-        width: 50%;
-    }
-    #about-me-text {
-        text-align: center;
-        font-size: 20px;
-        padding: 1em 1.5em;
-    }
-    #about-me-img {
-        width: 65%;
-    }
+  /* startseite content */
+  #startseite-text {
+    width: 100%;
+  }
+  #startseite-content {
+    text-align: center;
+  }
+  #startseite-img {
+    width: 60%;
+  }
+  #kontakt-button {
+    width: 50%;
+  }
+  #about-me-text {
+    text-align: center;
+    font-size: 20px;
+    padding: 1em 1.5em;
+  }
+  #about-me-img {
+    width: 65%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    /* startseite content */
-    #startseite-text {
-        width: 100%;
-        padding-right: 40px;
-    }
-    #startseite-content {
-        text-align: center;
-    }
-    #startseite-img {
-        width: 50%;
-    }
-    #kontakt-button {
-        width: 40%;
-    }
-    #about-me-text {
-        text-align: center;
-        font-size: 18px;
-        padding: 1em 0;
-    }
-    #about-me-img {
-        width: 50%;
-    }
-    #about-me-section {
-        height: 50%;
-    }
+  /* startseite content */
+  #startseite-text {
+    width: 100%;
+    padding-right: 40px;
+  }
+  #startseite-content {
+    text-align: center;
+  }
+  #startseite-img {
+    width: 50%;
+  }
+  #kontakt-button {
+    width: 40%;
+  }
+  #about-me-text {
+    text-align: center;
+    font-size: 18px;
+    padding: 1em 0;
+  }
+  #about-me-img {
+    width: 50%;
+  }
+  #about-me-section {
+    height: 50%;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    /* startseite content */
-    #startseite-content {
-        text-align: center;
-    }
-    #startseite-img {
-        width: 50%;
-    }
-    #kontakt-button {
-        width: 40%;
-    }
-    #about-me-section {
-        width: 50%;
-    }
-    #about-me-text {
-        font-size: 20px;
-    }
+  /* startseite content */
+  #startseite-content {
+    text-align: center;
+  }
+  #startseite-img {
+    width: 50%;
+  }
+  #kontakt-button {
+    width: 40%;
+  }
+  #about-me-section {
+    width: 50%;
+  }
+  #about-me-text {
+    font-size: 20px;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    /* startseite content */
-    #startseite-content {
-        text-align: center;
+  /* startseite content */
+  #startseite-content {
+    text-align: center;
+  }
+  #startseite-text {
+    h2 {
+      font-size: 40px;
     }
-    #startseite-text {
-        h2 {
-            font-size: 40px;
-        }
-        h3 {
-            font-size: 35px;
-        }
-        p {
-            font-size: 18px;
-        }
+    h3 {
+      font-size: 35px;
     }
-    #startseite-img {
-        width: 40%;
+    p {
+      font-size: 18px;
     }
-    #kontakt-button {
-        width: 40%;
-    }
-
+  }
+  #startseite-img {
+    width: 40%;
+  }
+  #kontakt-button {
+    width: 40%;
+  }
 }
